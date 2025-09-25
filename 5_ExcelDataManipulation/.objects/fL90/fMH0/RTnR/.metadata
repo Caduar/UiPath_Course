@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome ArenaRPA",
+  "Type": "Screen",
+  "Id": "RTnRJj9wPkaHATcCrh7krw",
+  "Reference": "TKnv9osI9E6uPakO049EJQ/RTnRJj9wPkaHATcCrh7krw",
+  "ParentRef": "TKnv9osI9E6uPakO049EJQ/fMH079PqwUGc9ZeZtTBLCA",
+  "Created": "2025-07-31T23:34:01.6318462Z",
+  "Updated": "2025-07-31T23:34:01.6318462Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

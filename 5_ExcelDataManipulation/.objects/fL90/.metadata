@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome ArenaRPA",
+  "Type": "App",
+  "Id": "fL90mBORVUS3ivX8JkBp2g",
+  "Reference": "TKnv9osI9E6uPakO049EJQ/fL90mBORVUS3ivX8JkBp2g",
+  "Created": "2025-07-31T23:34:01.4333134Z",
+  "Updated": "2025-07-31T23:34:01.4333134Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

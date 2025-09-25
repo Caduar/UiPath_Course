@@ -1,0 +1,32 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "vStrName&Sequence_1",
+        "vIntNumberOfPassengers&Sequence_1",
+        "vDatBookingDate&Sequence_1",
+        "vArrCities&Sequence_1",
+        "vStrShortName&Sequence_1",
+        "vStrFinalMessage&Sequence_1",
+        "vDtbNames&Sequence_8",
+        "vStrRamAge&Sequence_8",
+        "vStrCurrentName&Sequence_17",
+        "vStrCurrentAge&Sequence_17",
+        "vStrCurrentCity&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
