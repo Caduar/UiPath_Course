@@ -1,0 +1,487 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1053,1064" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="vIntLastPage" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Real Estate" sap:VirtualizedContainerService.HintSize="570,1041" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="536,958" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2ce29187-26ec-402d-80c9-1575375ecba0">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="502,718" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Navigate Menu" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Barrio'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Text="Chapinero" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" ContentHash="X0UBssc4aU66qqdk0E_EYg" DesignTimeRectangle="361, 305, 240, 42" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='barrio' tag='INPUT' type='text' class='w-full rounded-md border border-gray-300 pl-4 pr-10 py-2 shadow-sm focus:ring-primary-500 focus:border-primary-500' placeholder='Ej: Chapinero' aaname='Barrio' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="05a15199-a15a-498d-a9a5-8b5ac3dc1d26" InformativeScreenshot="e072abad909f59c6a7941e7dbfb055bc.png" IsResponsive="True" Reference="V2Ba42yJWkq0_PNC8ebcSg/4E7BAuVJiU-tz7U5VVD8jQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="027c583b-7d41-4eea-8442-181270e7239f" CvTextArea="360, 283, 38, 13" CvTextArgument="Barrio" CvType="Text" DesignTimeRectangle="361, 281, 240, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='block text-sm font-medium text-gray-700' aaname='Barrio' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Barrio' /&gt;" Guid="5aa687c8-0ec0-432a-909d-69d1eb851a27" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Arrendar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="446d8070-f8f0-4233-b446-82c57a2ac996" ContentHash="apnCtj_100GGryHzPS6mvg" CvElementArea="359, 389, 99, 74" CvType="Button" DesignTimeRectangle="361, 391, 95, 70" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-arrendar' tag='BUTTON' /&gt;" Guid="a2bd0eed-53dc-4642-aeb4-ba60df9b7a38" InformativeScreenshot="eda08434a288c16fd5445525b3657abb.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/ZuvfpbFmZEyi3dlcbphW-Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apartamento'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="36a05d97-38ca-4757-ad6d-893651a072d8" ContentHash="9vZ7pWUWbUSyxlC3mzfMsQ" CvElementArea="359, 501, 19, 19" CvType="CheckBox" DesignTimeRectangle="361, 503, 16, 16" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='apto' tag='INPUT' type='checkbox' class='w-4 h-4 text-primary-600 rounded' aaname='Apartamento' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b68dae05-6716-44b2-9e1d-20c00b577b5a" InformativeScreenshot="b08ff57b65fcb88b6380724f23bd3a01.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/Tw_PFBNGxUyzCZy_W8pkHQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="36a05d97-38ca-4757-ad6d-893651a072d8" CvTextArea="383, 503, 84, 16" CvTextArgument="Apartamento" CvType="Text" DesignTimeRectangle="385, 501, 81, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Apartamento' tag='LABEL' type='' class='ml-2 text-sm text-gray-700' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Apartamento' /&gt;" Guid="d165a969-b543-4653-8e08-3804faf73813" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" ContentHash="ybms3XpMqU62XeikYi-w1A" CvElementArea="415, 615, 52, 34" CvTextArea="435, 624, 10, 13" CvTextArgument="2" CvType="Button" DesignTimeRectangle="417, 617, 48, 30" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' 2 ' tag='BUTTON' /&gt;" Guid="d9eae476-229b-4699-9483-bd51ea48f21f" InformativeScreenshot="531091c4e631bf4ee63cdf0ea7792ef4.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/DO3JF-mlRkevKwbYt95JJQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" CvTextArea="359, 595, 84, 13" CvTextArgument="Habitaciones" CvType="Text" DesignTimeRectangle="361, 593, 240, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Habitaciones' tag='LABEL' type='' class='block text-sm font-medium text-gray-700 mb-1' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Habitaciones' /&gt;" Guid="6f2b061d-bba1-458a-a5bf-7247ab7c3598" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Precio'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Text="3500000" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" ContentHash="ijiK7EG3u0qC9umbWQ2T8w" CvElementArea="483, 685, 119, 58" CvTextArea="496, 705, 88, 14" CvTextArgument="Valor máximo" CvType="Button" DesignTimeRectangle="485, 687, 116, 54" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='w-full rounded-md border border-gray-300 px-3 py-4 text-sm shadow-sm focus:ring-primary-500 focus:border-primary-500 no-spin ng-untouched ng-pristine ng-valid' tag='INPUT' type='number' placeholder='Valor máximo' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="464c15a0-6d35-43e0-86e5-1098c60cd7c0" InformativeScreenshot="32af940c53960177ea1a28ed26886ea4.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/VoBM8_JpmEG9OSDbmH5z4Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" CvTextArea="359, 665, 42, 13" CvTextArgument="Precio" CvType="Text" DesignTimeRectangle="361, 663, 240, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Precio' tag='LABEL' type='' class='block text-sm font-medium text-gray-700 mb-1' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Precio' /&gt;" Guid="ef4e7b4b-ecb1-4429-8352-f45a2f8b937b" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Aplicar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" ContentHash="GFiS9uJ-8kCnvVunT93dYQ" CvElementArea="358, 747, 245, 47" CvTextArea="457, 762, 46, 17" CvTextArgument="Aplicar" CvType="Button" DesignTimeRectangle="361, 749, 240, 44" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' Aplicar ' tag='BUTTON' /&gt;" Guid="2bb7333f-7550-4faa-9011-24fe5c192493" InformativeScreenshot="3f924ae2c6272495d181b33b62c1a6d1.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/Qxyk1JyiIkSwee3CU9Oqfw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </Sequence>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Capture all data" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Default="0" Name="vIntIndexProperties" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Capture Last Page" sap:VirtualizedContainerService.HintSize="468,832" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="vStrControls" />
+                          <Variable x:TypeArguments="x:String" Name="vStrLastPage" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NGetText DisplayName="Get Text 'Previous page 1  6 You…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" TextString="[vStrControls]" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="51486ae7-7c40-469d-a376-b4de6fd52421" ContentHash="C9F0Buk5uEmJfb2-cpAsQg" CvElementArea="931, 694, 18, 19" CvType="ArrowButton" DesignTimeRectangle="927, 688, 355, 46" FullSelectorArgument="&lt;webctrl tag='PAGINATION-CONTROLS' /&gt;" Guid="6c19e4d5-26ab-4694-96aa-6a11488a132d" InformativeScreenshot="c714ff32b0eba940b73f3559cb0d4bb1.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/UmYiVvK_9E6GksZkujYueg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[vStrControls]" />
+                        <ui:Matches DisplayName="Find Matching Patterns" FirstMatch="[vStrLastPage]" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[vStrControls]" IsBuilderTabModified="False" Pattern="(?&lt;=\/\s*)\d+" RegexOption="IgnoreCase, Compiled" />
+                        <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[vIntLastPage]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[convert.ToInt32(vStrLastPage)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[vIntLastPage.ToString]" />
+                      </Sequence>
+                      <Sequence DisplayName="Navigate page controls" sap:VirtualizedContainerService.HintSize="468,50" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:Int32" Default="0" Name="vIntCurrentPage" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InterruptibleWhile Condition="[vIntCurrentPage &lt; (vIntLastPage)]" CurrentIndex="[vIntCurrentPage]" DisplayName="While" sap:VirtualizedContainerService.HintSize="990,982" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                          <ui:InterruptibleWhile.Body>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="988,859" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="variable1" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Pagina actual &quot; + (vIntCurrentPage + 1).ToString]" />
+                              <ui:InterruptibleWhile Condition="[vIntIndexProperties &lt; 5]" CurrentIndex="[vIntIndexProperties]" DisplayName="While" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+                                <ui:InterruptibleWhile.Body>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,191" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Capture Title" sap:VirtualizedContainerService.HintSize="450,131" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="vStrTitle" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NCheckState DisplayName="Check App State 'Casa en Suba'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Timeout="5" Version="V4">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,419" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NGetText DisplayName="Get Text 'Casa en Suba'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" TextString="[vStrTitle]" Version="V4">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="ace938df-3ea7-4e33-879d-ff13f9349a56" ContentHash="SW8xwqsEPkagtRFfwIocsg" DesignTimeRectangle="858, 468, 281, 32" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl tag='H5' idx='&quot; + (vIntIndexProperties +1 ).ToString + &quot;' /&gt;&quot;]" Guid="1898a808-0335-4d55-bcf3-3be381ab83d2" ImageBase64="" InformativeScreenshot="28baed1bd08b225e8e8f5e17208e40a2.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/Cta4WHHIWUOXa7X3xodHEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[vStrTitle]" />
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,287" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;No hay Más elementos&quot;]" />
+                                            <ui:Break sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="ace938df-3ea7-4e33-879d-ff13f9349a56" ContentHash="SW8xwqsEPkagtRFfwIocsg" DesignTimeRectangle="858, 468, 281, 32" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl tag='H5' idx='&quot; + (vIntIndexProperties +1 ).ToString + &quot;' /&gt;&quot;]" Guid="1898a808-0335-4d55-bcf3-3be381ab83d2" ImageBase64="" InformativeScreenshot="28baed1bd08b225e8e8f5e17208e40a2.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/Cta4WHHIWUOXa7X3xodHEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </Sequence>
+                                  </Sequence>
+                                </ui:InterruptibleWhile.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:InterruptibleWhile>
+                              <uix:NCheckState DisplayName="Check App State 'Next page'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,567" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Timeout="5" Version="V4">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next page'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="8c62515d-87e1-4bc1-b296-d54e063f6e25" ContentHash="TnceAM9Ma0ixRN0pJlcKVg" CvTextArea="1218, 695, 54, 14" CvTextArgument="Next &gt;&gt;" CvType="Text" DesignTimeRectangle="1209, 688, 72, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Next page' tag='A' /&gt;" Guid="97324a6d-75d6-4366-9dc8-5916e13f20aa" InformativeScreenshot="f5d5b9855e05ddc2f824384cf5d2dd2c.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/IzsSYRYAeUOdrN3a2LH83g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,287" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;No hay más paginas&quot;]" />
+                                    <ui:Break sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="8c62515d-87e1-4bc1-b296-d54e063f6e25" ContentHash="TnceAM9Ma0ixRN0pJlcKVg" CvTextArea="1218, 695, 54, 14" CvTextArgument="Next &gt;&gt;" CvType="Text" DesignTimeRectangle="1209, 688, 72, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Next page' tag='A' /&gt;" Guid="97324a6d-75d6-4366-9dc8-5916e13f20aa" InformativeScreenshot="f5d5b9855e05ddc2f824384cf5d2dd2c.png" Reference="V2Ba42yJWkq0_PNC8ebcSg/IzsSYRYAeUOdrN3a2LH83g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NCheckState.Target>
+                              </uix:NCheckState>
+                            </Sequence>
+                          </ui:InterruptibleWhile.Body>
+                        </ui:InterruptibleWhile>
+                      </Sequence>
+                    </Sequence>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="468,276" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Metros'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='rooms'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='bathrooms'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Parking'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h5' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="2ce29187-26ec-402d-80c9-1575375ecba0" Version="V4">
+                  <uix:NExtractData.NextLink>
+                    <uix:TargetAnchorable BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="0f653047-5f5b-45ab-b1c5-15ccc87695c4" CvTextArea="1218, 707, 53, 15" CvTextArgument="Next &gt;&gt;" CvType="Text" DesignTimeRectangle="1209, 701, 72, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Next page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Next page' tag='A' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Next &amp;#xA;page' /&gt;" Guid="b730df06-c5fd-487d-a7c3-9cd36d6291b3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NExtractData.NextLink>
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://arenarpa.com/tools/real-estate" DesignTimeRectangle="649, 125, 912, 826" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-real-state&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div' tag='DIV' /&gt;" Guid="a1b3a366-2b62-48be-8ca6-97f60091b449" InformativeScreenshot="2a432a11ee423d93f8cafc3f44838e12.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+              </Sequence>
+              <Sequence DisplayName="Write csv" sap:VirtualizedContainerService.HintSize="468,266" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Semicolon" DisplayName="Write CSV" FilePath="Results.csv" sap:VirtualizedContainerService.HintSize="434,179" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" ContentHash="UgL7IgCM6k2Itm340vqMhw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAA9CAYAAAAd1W/BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAB7oAAAe6AY/2SI4AABZnSURBVGhDtZv5d1VVlsffn8B/0PwFvVyra/Xq6kmquhyWpZSKE+KADIKggCAzJIwhJCEzmUcykTkhc0hCJmYERERGRQTBocoa1W6V0/uzT/bl5vmCgPrDXve+c889Z3+/e+/vOee9JOKc+0WsPjdhcuh+ypi9L7YhZEvE1kW1JYrNEbsv9P4ku/+5LWbj3RoOjtlkscfFADIoli1WLVYmFid2WYxnM8UgBAIwu+cZfe2d3WLJY/c8Y2wlw64/1WI23o2JI/eJ4WCDWJHYJrENTQXbhw6171py/fS+xC8vHtwgNthTlfVnrmIOu3Jir9rYZ312/mDbSUzuN3xwtGsTY7QUJTM2BEAG5JAlzBlkyb1azMYfM5n4ETEcyhMjSmVdFZnVY2AVoDhvwMbZF+dG3bVT/e7qO9HWF7M/9sm7+7hCUAukdFdlGRFYiRjZsyCWrz9mMRsnMpmEVIX9DrHcI50VmTh15Xjv30KRdJ+9P6ygPjreK9YjUe51l9/uUVIuHelwHx7rElADgV0Tu3i4w10Q4xn9ePfy2916z1ifnx0NxseY88Z7Q9XDzUWZ4gsknBVLFwu0504sZmO0MahYq1hLa3FKycn+2iFxgoioM0T145N7xfoUMI5/JKCJ9Idyz+dLRzo1yvSh75mRZrEmtbMHWrUUrkp/iKIvwLn/8Fi3vvPB0U53WcfuiZUtl/trc49J2aXhoxjl8V+xsERbzMawyUCkendz4fa94mQDE35+dkQn9qncp05aGkMA7RAAcIzn104NaPSJNAQE0Zd23oWAs/tbNQN4fuFQu5JAu4118XC7ksEc9IOMsfIIrvgoROwXnwfEHo+FKWwxGzEYFOtrzE+sv3S4Yw/OMAHRlloPQOAcTinosXSHCK4YGcAzwBthkOCtfZxBhoGHFN5h3o+VZAB7MhmXPvTlM+VCf/zDeOfAntJu8Z2sRScmzIaYjfICyn6gozxtWAYMUh0AOHPjvUEFfv20vwIKZ4gIfYwMywYDHwCSvqS0ZYQHtVdJ4DnjcQUYV0qC59xDApqhpSKfeRdyeI5vvGv+ihZdaStN7RMsZETMFeMHDdIRhe8daSl+lwkZiJS3lIX98JXJiZwHfCv6fCYzrGY9iF4FjfHcxmQeiKAP/S8IEUYCgCHLj+ezg6ziM5oAcE+CJ+IDMea1MsVEH46ACWzReMd9gKWGvG0fntpXf8VexkEmJu3tngwAjGWCteO0tqljXvlxxuqVq/UFmImgRk/aIBKASoKWgdcXQFmUGZs2+l8SYnxmdeq49CEI1obPhuN4b82o4LsiNm4DFQY/ScAP9Nfl/sVeAgyDAMYIMODeYV8SXJmcOsRBjDZrB5CVCurPuxjjmQAC6lbkfSYAgn6+FGjzkScDfDZ54DafEUCb6oUY7YanqzLzE8HZMBEBBaMtJVct7T89M6QD4QCT2WfuTawY/MrY1Zi3/j49Q1dxBmMMHI0WQUBABpFnTADjC+NCkL/3Y/nIs6rcujKuH8cHiLnOH9yj8+ATmBijtzqbLAhIMPCTZbv5R2OKaGO8SEQwJoCEMAFKgpLiQVsUlAh5xxz24Lw24BBO8q4XRdEGufekeGW3OjaieM4YAYFy9c997YcJ4F3uMd7R92XeT8bKAW1oKkj8MxkfENBclNRwuLMi6AAABjDgXK0cFLQQYNE24zMTGliuRgYO4ChXooBTNjZjeUd97fMO49EfouhPG+9SIgbc9x3TgjEC/Dy+L0ExEiyTLMAiit82FyYlBQRI9P9hD8ORx3muVv/cMzhO24Q8YxK72ntEC2fZN9jYd2uy1dVxAGtEAcYIIjOYjyzCH/qSVTz3WUlwPNGGiXEJcmtx8t+VgGPdVf/UXpYWPCDNLdpm7O1pN0LCBNDXQDMhnw3Any4ckDFHfemIAwCwZfDCobZgFSAjMMABlvEYJ5o83mfOAGAUAZTdRckGom2gzeiHENtYbaU7bsp1UmS0taR4sCFfGwEKEF7GAe6NBAax9DTQmg3SF8fMWQ/al5GPli8H0pQ0B7zVOmaRkiOwHob8VYRQxsYAx1yM+cfz+3UO5mc8tIBn3BshEIj44SvP8cGMvrZjHKjLdftbS1Mi++rz3znYvisY2AwSAIHhKOnFvWUI9zhowHGOZ/SDMBwAuK9ZX8c++n5piyYAgwCeQ8AtzfDEMR/vs/u0OclE0wTOAviMMRd+QADZwD3tPrs8AWBmgxSRHd81I8DA0Zn7MFgDb5PAZhi4ZoP0wWEIwFkmxkGupLhv8zu6cwf2hEqAiPuljmWQLKAfY/LMCDgnkWVulkGy1TLi4mG21ZL60h/dYE6M7ISYy2Mk4DPjGAFgjxzfu/vyQJ0vAR4aeK58xiwrmNSeG3ic5BnALWLRBADM17iPvtW8ZQDHYR9xv9WFAMuAaAK4Womwx7BsINKQAGDGBayPvt9y24YL3+g/1FTk3u6tvhARJ7+UQ4820hGQAKIjV/+yZw5jcPpS6wwI65by9Cft6R8mAMdsO2vZwDhGgJIgR2GuAD8vAumzwi9rngDODH7rC0H+Xb+vMBKUZOYQH7wfXrQhgfe4fnpmWPuCWdq+jMi+/6qcmFRkGCgshFyNDO6ZMAA/5gDtOIfjBpwrjgOIiChwccgIZQ7mYk6bl6xiHJxmLEhjbN71Y/UqMVxN1G5opvqIWzkwN6TTTgZwzxctYKCfZS+YxderkZHW4rOyBZbzc5k6RgeumGUBjnBPGy9zz0QevN8GwzjtOBu+sgxCGO/djQGI+XA6TACfAYWGsLuj5nnGXLynWanA/UaIqPMMYzzwDDcXOzCfHmo4G6nJ3jQKW6QED5nYIsILALQyMMc0K8aIoQQsNX30ujSqYdBM/v5os4hOkevdne32lKW4yox4t3bhC27jm6+43Ts3ucaCba67KtMNNuYLuNYgUtgX5/ycpDcagbiRAZBApkAIpWVzAt4CBAFkCu/jF1ewcj/cXDAayd+24qiUgWbAPtkPANBIoBOD8BIsMzikcI9ZdGCcPvTlXe/0qDs93CiAs1xnZZrrqEh17btSXVv5DiXgoV//c2CP3f8vSkBDfoKrz9vq6nK3uNqcza61JNm9N9wsY3pgjA1QPz/HYV8KgKQNf+kHUfhkZeXBj6pPIxL9vTU7VVe6KtOPRZJWz79SJ5OSBTyU05IyaUQAmIEYhMEt8gbY7klFnvPu+/tbXE9NpuuuznBdVenjCOgsT3JdZdvcvGm/GWftRZvlkLJ1HAG7d2521dmbXG3uVlkuW4LxqWkAk5kEATL4bD6gN17whpQUcPDeQH2ebIDy1N/uqgxXsmPt9UjKmgV/LUtd50ZaS7Qz2+LTQ406EC9aOViNQQCbkSDNxAkjh/7FKWvUjICRujR3qjXVXd6b5T4ZzHEf7c10FzpS3KmGze5g+eof2P6yNW6gZJ3rLIx3DbmblICqrI1ux7qFri4vQedgLiKMWGKmQeYHBBC4MPjTg42KjTb2HruF4MKkVV9FMuIXf5+zZZkrSFzpKIW3e2s0RRAJmLVssME/HcsICCECGH2wkZZCN3XKr9yGJTPdidY09/HATvfZaMGEdmM4z13qSnVHq9bHJAPrL17nmnLj3fK5z7qX/vBb1yJlYWSb4uNneIeIbwacz5x0+yXyYKNk26QEMSHh+0jGhsU3ISBr05uuPG29rqWw1CskyFZR740Em5g2Uh/R+0zuaT/RVyOT7HSrZ091l7rTYwK+nZEVhyvWxiQBa0pd5OY+9YDblR6nQAwoJBAcA02799lfD7aVuR4pa0giWPsachVrY+E2CLipBFACgE+PX6QTnBpsULUdbChQYTx/oE01whiGEAaHACalfaA+xx1szNSoxgJ4J3Z1INsd3x0fkwCsv2C5q81aL2WxMQBKBlD7YfD4+v5oqxtqLBQCyv3KIWII+L7abE1/gqUEpK5//dv8xBVKwKr505UA7GBHuQ4GeIQDAUFxmcRIoM64R4AONWX9JPBmjHG7TNhfttpVpK9XQPiH4YulO+AHGwtc3+4c985AnbaxrO6V5ZeVJmvTEgWPCFZmxn8XSVm78Ku0uDeUAHQA8IXbV7mKjDhR7wxNGyY51F6uq8Rwc5GIZFNAAsY+4KO+7JiA7sUQyljgzXoK1igBYeCUxdGuSs3aoaZCjTqZebS7QsBnBQTsElxj0SeTvo6kxy36btPSWa5ElBsSICBh+Vy3c/NSISFelqAt7ogMbGyf6KuVNOIsXaIMw/j1U1JfQ/kxwdyr3U4YMeoef9gn4EtHebqc8MrVH9rPylIM0N6aLMG03tXIZov0x4g+n8XGRHDrMgVdnLxaCchNWO6KksiCeFeWtk5SZYNrKtzu3h1bHmGXiQ+IwIxIRpAV++vS3Qd9OQGAKwO54wDdrZ1p2RaAZWm0++HStW5fZZLOydyH5FhLIIi+961Nd5M91ZkCHstSXGyqAN9SnOQo+UADTAS3LJvtNksmmAZQAhCw6rXpSkAVlrVBNypHuyuVaSbkCvNaHohOc5470pTh+ipS3JnObHe+59ZSeLwlYxxIsiY6cyAOO9cmIAXsQMl611Gw0fWVSgSr0mR5LlKwzImy4wOpzlZ7X0Oe7j0Az+YuN+EtJcBKAAKk7l325jdDBMg+AALS4ha5lfOmuzyJ/rYVrwYEZG5cHBBQIMztSotTFWaDgjCy3fUHD0/IRcmOk/21+pXTsa4KN9pU4EYbc2RDlOHaihPdkcb0wIZ371ALt41KJvVXpQrYVDcoK8sREeMDe0rdse4qHZs5MJY/vvo61FnOllZ3nKR2mIByyV4joEN2oWAiuJQ7BFTv3PgdGvAtJUD9k/bbV813C1+YGhAAY0bAtpWvutytbwUEjNWRCkpHRbo7JM7ypYXVpjl77USPOzfa5Lqkz+lB0nWX2oiIFWafT+ytEat2b/dUylb21opDpIky21s2a6OtRa6zIs2bbLONALSsUrIUAsIlAAFLZ03T9R8iAN9UmIi+fR3ZuWXZzayNS5QADC2YP/33SoA806gbASqSoQxY/8aLAQEYgomxl28q2i4pl6O7sOMCjKPsqX0NuhOzbTVZY5kDaXyHx/cJ2DsDtVrbw82Fmr7tcojCAIABvkFUvSIzLiCgcPtKPWwZAW3lKeonBLw2/VHJ8je0DMbSX3xM/DbCLpCosgmyVYCtLARQCgtmPBYQgAZUy748FgFFIjQ71r8eEEAKohf1csLjlIezLEPswGBfJleSmrHi7SpOLSVJKlatpcluDza2ZQUU4Oknp9eAAB+kpTFLAFs66ykXt+hlJYDM5kAGARWS1a0yF/NHUHw0gMhnS4qERRACHv/tvwYE7Fj3+jgCwiUAAXGLXgoIKNmxxiWsmDuOAErsdgQ0FCToWEYAY8lGLSCAAEG6ERBdAhBAFhgBc55+KCAglggyb4T6NwJIETkhKcsQgDByVjcCpj/y32796y/GJAALl0AsAsimMAF8IYIgGQGc+CDZCKCe5bgeEBBdAtEEQBY+4i8EvDj1N7rkGQHMTfTBDAH4FOGbGTqxVup+QKK+ZOaTSgAiWCpAwgS8/Pj/BASsePU51YlYBMQqgegMyJb0ZSwjoCbHkzlRCUQTwHtkBP0gYPZTD6mP+A0BaICJIAKIMS+EMe5Afa6LiDPjRHCz7AcmWgUQkjABTIYZAQCUfcUvpgFlqWt1bCNgwfOPaoniqxEw95mHdS4ICK8CYMoUnGERPNm/+38jnRUZXyKCGASgA68++4gOigbwnZ0RgAhSLmEC+ErLCFg252n9vPWtOUpAjfRBpCipuyWA0sjbtlyeJyoBgOe7BgJgBMx+6kElgK0uBDBnWATJ6MRV85SAN178g/oIAZDK/O8O1p+JtJenHiVKaAATIoDFyWsCAsIaEL0KsHuE8WgCVsupEmdYQnGQNoiDgIwNi9wrTz7g5j33SEAAWjDj0fvdmgUzAgKm3v8rfQ9dggBI5DOkGwGcXvGbd0wEwwQ8/dB/BCLI13GAJ4MQQTZrclBqiYhjk/eUJH+fvGaBk13huFUgceU8ndQImD3tQT0xGgHRIhi/+GU37YFfBwTkC6FGgH4JIQSwmeIzZgRACJ8Xv/xEQID1sVUAAp5+8N9Vn4wAtZAIMufCGVMlo5KUAN5HI0wEIaAqe4Oedk/01fxtoD5nsv59wJ7SlFMAoIYRwbg3XlIC0IB1Ep2wCM59+uGAAABOtArgDFFf9NLjbuYTvxOhXakEbJHyMHC3I2DWtAfc4plPqE8TiSBWl7clIIBVBh9NBDfKfsY0oGbnZs1w+vLL0qGOst7gDyTE0UlSCt8AgghNJILPPPyfPxDBlfOem5CA24lgYdLKgICi5FV3JILRBFACZBhzmgg++bt/0wyGgGgRJAuPyTZb7IYI4a0/kcHq87fN6ShP/Y5Ob815Rgkg/VibjQBq2vYBTBItgggm0UbAfoyAu10FmuS910T1V7z6bEBAtAhuWDxTN2SmAWgWGz0ISFr9msy9XbbjdX8ZaSmcYbgDArC2stRsObDclJJQAhBBvomNJYKcGmc8OmUcAdEiWLpjrYrdPFlVjAAyKlHGTZRMC2cAW1V2cUYA5cD4zDORCELAc/IZf2KJ4MIXHgtEkK/tLhxq+0pSPy6MeRwBWFt5araUw/8BCAKY1AhApcPLIPUf3ghx4goTcDsRfExU/k5EMHoVoAyNAH48id4K850Gig8B9N/45iw31FzAgeyLaPDYuA9mdXkJS6UcviFqdblbAwJg/81XnhxHQFgE2WYmr3nNZbIZEgLyEt4KlrN7XQWSZDwIqJE5Wan4tcgIUAsRAPH4SJZBwIn+OhU8We5uDDbmx/yHih80mEkJ3CfOfSaDf1+bs0UJoL7DIjh72kMaISMglgjyqw47TfpDQG7CMrdWMmntwhkBAWxWWG3QGyMA8jgc3U4Ed8nGDeFDU0wEZ8lSje7wQ+wHRzv/MdRUcFFKYMJ/rYnZGLbGwsRi0YSv2dW1le7QSBoBsM1GyQhIFTJQZs4XP7cIAp4MYCkLa4AXQb8Vrsvbpr8bHumuhIDPBxvz0mNhClvMxmiTEpgsDh6Sib+R0lBwqO2C5x/TNDUCTATjRXjog5ByREad74SAKiHWCMiIX6SbmGoRXghgK8zY0SK4av7zOhd1jtAd7tpFundLCdzRv87EbJzIZBWY3FS4fV972Y6/NhYk3uyuzOAPDgMCls99Rp28JYK3tsK2ETINeEp2jEbA/Od+r20svz8mgqxKRgB/W/TlRf1Z7puR1qIrcrrbI6vAz/8/Q9EmJTBJorhUonatc1fa39vKWKcTRZW3uApJR5YuCAifBe5VBI0AfhTd31buzoy26HeP/MJ7sL30Sl/dzrN9tTsXSAnc0/8Rxmy8GxNVnizRnylkvCP1+ifZR3wly6jUcIqeBskSVhIyBAI4LlMimBFQmrpedoZrXLqcRYwAFJzo8hOdbF70J/sjXbuu9tflXJZ9/ahkwEyxu4p2LIvZ+FNMVoH7JPozJWK1rcVJFzor0j8SRz8TUbqu1lp0/dRAnXtvuFF/X8DOH9ijP7Yc7am8fKynSk0OLlf763PPytp+srs6s0REcKbYT/5HyWiL2fhLmIjgJMmAKSKCU6RcpogITpHoeyvePkUyaIqsAlMkA6ZIBvws/xb74+Yi/w/q2cclz0fkPgAAAABJRU5ErkJggg==" InformativeScreenshot="4a744cc05201b85c6f599b4df08e7174.jpg" Reference="V2Ba42yJWkq0_PNC8ebcSg/dINHFkFv6E6l9ZIOkuR-VQ" Selector="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" Url="https://arenarpa.com/tools/real-estate" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

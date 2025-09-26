@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GFiS9uJ-8kCnvVunT93dYQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" CvElementArea="358, 747, 245, 47" CvTextArea="457, 762, 46, 17" CvTextArgument="Aplicar" CvType="Button" DesignTimeRectangle="361, 749, 240, 44" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' Aplicar ' tag='BUTTON' /&gt;" Guid="2bb7333f-7550-4faa-9011-24fe5c192493" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="3f924ae2c6272495d181b33b62c1a6d1.png" xmlns="">0q2nOHEj6mUqfPSrOloOtLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

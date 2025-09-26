@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TnceAM9Ma0ixRN0pJlcKVg" Reference="V2Ba42yJWkq0_PNC8ebcSg/IzsSYRYAeUOdrN3a2LH83g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="8c62515d-87e1-4bc1-b296-d54e063f6e25" CvTextArea="1218, 695, 54, 14" CvTextArgument="Next &gt;&gt;" CvType="Text" DesignTimeRectangle="1209, 688, 72, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Next page' tag='A' /&gt;" Guid="97324a6d-75d6-4366-9dc8-5916e13f20aa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="f5d5b9855e05ddc2f824384cf5d2dd2c.png" xmlns="">08ognKAsiBkypexIWfWr3DQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

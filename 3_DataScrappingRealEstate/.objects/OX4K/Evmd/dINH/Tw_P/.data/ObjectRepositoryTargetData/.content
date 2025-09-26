@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9vZ7pWUWbUSyxlC3mzfMsQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="36a05d97-38ca-4757-ad6d-893651a072d8" CvElementArea="359, 501, 19, 19" CvType="CheckBox" DesignTimeRectangle="361, 503, 16, 16" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='apto' tag='INPUT' type='checkbox' class='w-4 h-4 text-primary-600 rounded' aaname='Apartamento' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b68dae05-6716-44b2-9e1d-20c00b577b5a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="36a05d97-38ca-4757-ad6d-893651a072d8" CvTextArea="383, 503, 84, 16" CvTextArgument="Apartamento" CvType="Text" DesignTimeRectangle="385, 501, 81, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Apartamento' tag='LABEL' type='' class='ml-2 text-sm text-gray-700' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Apartamento' /&gt;" Guid="d165a969-b543-4653-8e08-3804faf73813" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b08ff57b65fcb88b6380724f23bd3a01.png" xmlns="">0U_hyU481R0eFJizYz_lVvQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="X0UBssc4aU66qqdk0E_EYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="arenarpa.com/tools/real-estate" DesignTimeRectangle="361, 305, 240, 42" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='barrio' tag='INPUT' type='text' class='w-full rounded-md border border-gray-300 pl-4 pr-10 py-2 shadow-sm focus:ring-primary-500 focus:border-primary-500' placeholder='Ej: Chapinero' aaname='Barrio' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="05a15199-a15a-498d-a9a5-8b5ac3dc1d26" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="027c583b-7d41-4eea-8442-181270e7239f" CvTextArea="360, 283, 38, 13" CvTextArgument="Barrio" CvType="Text" DesignTimeRectangle="361, 281, 240, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='block text-sm font-medium text-gray-700' aaname='Barrio' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Barrio' /&gt;" Guid="5aa687c8-0ec0-432a-909d-69d1eb851a27" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e072abad909f59c6a7941e7dbfb055bc.png" xmlns="">0dTl0pHeh-kKf62CQCA9JCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

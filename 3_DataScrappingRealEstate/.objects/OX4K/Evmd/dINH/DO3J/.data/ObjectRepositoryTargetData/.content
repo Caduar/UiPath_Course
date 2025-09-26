@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ybms3XpMqU62XeikYi-w1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" CvElementArea="415, 615, 52, 34" CvTextArea="435, 624, 10, 13" CvTextArgument="2" CvType="Button" DesignTimeRectangle="417, 617, 48, 30" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' 2 ' tag='BUTTON' /&gt;" Guid="d9eae476-229b-4699-9483-bd51ea48f21f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e3321c0b-9628-4d40-901b-78b931bf2919" CvTextArea="359, 595, 84, 13" CvTextArgument="Habitaciones" CvType="Text" DesignTimeRectangle="361, 593, 240, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Habitaciones' tag='LABEL' type='' class='block text-sm font-medium text-gray-700 mb-1' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Habitaciones' /&gt;" Guid="6f2b061d-bba1-458a-a5bf-7247ab7c3598" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="531091c4e631bf4ee63cdf0ea7792ef4.png" xmlns="">0w-auAI1Qak25EJ_FUtvYxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

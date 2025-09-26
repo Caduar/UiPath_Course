@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="C9F0Buk5uEmJfb2-cpAsQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="arenarpa.com/tools/real-estate" CVScreenId="51486ae7-7c40-469d-a376-b4de6fd52421" CvElementArea="931, 694, 18, 19" CvType="ArrowButton" DesignTimeRectangle="927, 688, 355, 46" FullSelectorArgument="&lt;webctrl tag='PAGINATION-CONTROLS' /&gt;" Guid="6c19e4d5-26ab-4694-96aa-6a11488a132d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ArenaRPA' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="c714ff32b0eba940b73f3559cb0d4bb1.png" xmlns="">0V4rMLVSc2Eyp7B9nnVTAHA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
